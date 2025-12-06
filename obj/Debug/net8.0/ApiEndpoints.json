@@ -1,0 +1,394 @@
+[
+  {
+    "ContainingType": "assignment2.Api.Controllers.PetProfilesController",
+    "Method": "CreateOrOverwrite",
+    "RelativePath": "api/petprofiles",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PetId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Pet.Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Pet.MicrochipId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Pet.Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Pet.Species",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Pet.VetDoctorId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Pet.VetDoctor.Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Pet.VetDoctor.Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Pet.VetDoctor.Specialty",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Pet.VetDoctor.Pets",
+        "Type": "System.Collections.Generic.ICollection\u00601[[Assignment1.Models.Pet, Assignment2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Pet.PetProfile.Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Pet.PetProfile.PetId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Pet.PetProfile.Pet",
+        "Type": "Assignment1.Models.Pet",
+        "IsRequired": false
+      },
+      {
+        "Name": "Pet.PetProfile.VetNotes",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Pet.PetProfile.VetNotesFile",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "VetNotes",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "VetNotesFile",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Assignment1.Models.PetProfile",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "assignment2.Api.Controllers.PetProfilesController",
+    "Method": "GetByPet",
+    "RelativePath": "api/petprofiles/{petId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "petId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Assignment1.Models.PetProfile",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "assignment2.Api.Controllers.PetProfilesController",
+    "Method": "UpdateNotes",
+    "RelativePath": "api/petprofiles/{petId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "petId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "notes",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "assignment2.Api.Controllers.PetProfilesController",
+    "Method": "DeleteByPet",
+    "RelativePath": "api/petprofiles/{petId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "petId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "assignment2.Api.Controllers.PetsController",
+    "Method": "GetAll",
+    "RelativePath": "api/pets",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Assignment1.Models.Pet, Assignment2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "assignment2.Api.Controllers.PetsController",
+    "Method": "Create",
+    "RelativePath": "api/pets",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "Assignment1.Models.Pet",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Assignment1.Models.Pet",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "assignment2.Api.Controllers.PetsController",
+    "Method": "GetOne",
+    "RelativePath": "api/pets/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Assignment1.Models.Pet",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "assignment2.Api.Controllers.PetsController",
+    "Method": "Update",
+    "RelativePath": "api/pets/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "input",
+        "Type": "Assignment1.Models.Pet",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "assignment2.Api.Controllers.PetsController",
+    "Method": "Delete",
+    "RelativePath": "api/pets/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "assignment2.Api.Controllers.VetDoctorsController",
+    "Method": "GetAll",
+    "RelativePath": "api/vetdoctors",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Assignment1.Models.VetDoctor, Assignment2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "assignment2.Api.Controllers.VetDoctorsController",
+    "Method": "Create",
+    "RelativePath": "api/vetdoctors",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "Assignment1.Models.VetDoctor",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Assignment1.Models.VetDoctor",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "assignment2.Api.Controllers.VetDoctorsController",
+    "Method": "GetOne",
+    "RelativePath": "api/vetdoctors/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Assignment1.Models.VetDoctor",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "assignment2.Api.Controllers.VetDoctorsController",
+    "Method": "Update",
+    "RelativePath": "api/vetdoctors/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "input",
+        "Type": "Assignment1.Models.VetDoctor",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "assignment2.Api.Controllers.VetDoctorsController",
+    "Method": "Delete",
+    "RelativePath": "api/vetdoctors/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
